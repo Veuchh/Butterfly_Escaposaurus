@@ -151,7 +151,7 @@
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
-		helperContacts[0] = { "vid": "Boss", "vod_folder": "", "username": "Boss (pour avoir un indice)", "canal": "txt", "avatar": "bossoriginal.png", "bigAvatar": "bossoriginal.png"} ;
+		helperContacts[0] = { "vid": "Boss", "vod_folder": "", "username": "Boss (indice)", "canal": "txt", "avatar": "bossoriginal.png", "bigAvatar": "bossoriginal.png"} ;
 		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 
@@ -169,7 +169,7 @@ var missingContact = { "vid": "missing", "vod_folder": "", "username": "Agent", 
 		tips['Boss'][2] = "Cette fois ci, nous recherchons la position de <b>Myrtil</b>. Au travail !" ;
 		tips['Boss'][3] = "De manière logique, le cocon semble être égal à 21..." ;
 		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Macaon</b>." ;
-		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet. Combien y en a-t-il" ;
+		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet. Combien y en a-t-il ?" ;
 		tips['Boss'][6] = "Cette résistante est notre dernier espoir. Vous devez trouver <b>Vulcain</b> !" ;
 		tips['Boss'][7] = "Notre espion a dû disséminer le MDP sur les différents journaux sans toucher directement aux articles... Il faut chercher hors du cadre." ;
 
