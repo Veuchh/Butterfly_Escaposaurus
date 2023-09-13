@@ -47,46 +47,46 @@
 								[{
 									"foldername": "Butterfly1_Position",
 									"files": ["Monarque_positionGPS.png"],
-									"password": "epicure",
+									"password": "baudelaire",
 									"sequence": 1
 								}],
-							"files": ["philo.png"], "password": "monarque", "sequence": 0
+							"files": ["citations.png", "diplome_litterature.png"], "password": "monarque", "sequence": 0
 						},
 							
 						{
 							"foldername": "Butterfly2",
 							"folders":
 								[{
-									"foldername": "Myrtil_positionGPS",
-									"files": ["positionGPS.png"],
+									"foldername": "Myrtil_Position",
+									"files": ["Myrtil_positionGPS.png"],
 									"password": "47",
 									"sequence": 3
 								}],
-							"files": ["maths.png"], "password": "myrtil", "sequence": 2
+							"files": ["probleme.png", "diplome_mathematiques.png"], "password": "myrtil", "sequence": 2
 						},
 
 						{
 							"foldername": "Butterfly3",
 							"folders":
 								[{
-									"foldername": "Macaon_positionGPS",
-									"files": ["positionGPS.png"],
+									"foldername": "Macaon_Position",
+									"files": ["Macaon_positionGPS.png"],
 									"password": "3",
 									"sequence": 5
 								}],
-							"files": ["painting.jpg"], "password": "macaon", "sequence": 4
+							"files": ["diplome_peinture.png", "painting.jpg"], "password": "macaon", "sequence": 4
 						},
 
 						{
 							"foldername": "Butterfly4",
 							"folders":
 								[{
-									"foldername": "Vulcain_positionGPS",
-									"files": ["positionGPS.png"],
+									"foldername": "Vulcain_Position",
+									"files": ["Vulcain_positionGPS.png"],
 									"password": "161225",
 									"sequence": 7
 								}],
-							"files": ["newspaperClip1.png", "newspaperClip2.png"], "password": "vulcain", "sequence": 6
+							"files": ["Correspondance_agent.png", "coupurePresse1.png", "coupurePresse2.png", "coupurePresse3.png"], "password": "vulcain", "sequence": 6
 						}]
 				}],
 				"files":
@@ -130,9 +130,10 @@
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
 		seqMainHint[0] = "Noms_Code.png" ;
-		seqMainHint[1] = "aucun" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "aucun" ;
-		seqMainHint[3] = "swisstopo-screen.png" ;
+		seqMainHint[1] = "" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[2] = "Monarque_positionGPS.png" ;
+		seqMainHint[3] = "" ;
+		seqMainHint[4] = "Myrtil_positionGPS" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name
