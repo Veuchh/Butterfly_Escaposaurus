@@ -74,7 +74,7 @@
 									"password": "3",
 									"sequence": 5
 								}],
-							"files": ["diplome_peinture.png", "painting.jpg"], "password": "macaon", "sequence": 4
+							"files": ["Article_expo.png", "painting.jpg"], "password": "macaon", "sequence": 4
 						},
 
 						{
@@ -116,16 +116,15 @@
 		/*change of caller app prompt for each sequence*/
 		var promptDefault = "Pas de signal." ;
 		var prompt = [] ;
-		prompt[0] = "Pas de signal.";
-		prompt[1] = "Pas de signal.";
+		prompt[0] = "Pas de signal";
+		prompt[1] = "Pas de signal";
 		prompt[2] = "Contacter l'agent / Regarder la presse";
-		prompt[3] = "Pas de signal.";
+		prompt[3] = "Pas de signal";
 		prompt[4] = "Contacter l'agent / Regarder la presse";
-		prompt[5] = "Pas de signal.";
+		prompt[5] = "Pas de signal";
 		prompt[6] = "Contacter l'agent / Regarder la presse";
-		prompt[7] = "Pas de signal.";
-		prompt[8] = "Pas de signal.";
-		prompt[9] = "Pas de signal.";
+		prompt[7] = "Pas de signal";
+		prompt[8] = "Communiquer la position de la resistante à l'agent";
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 8 ;
@@ -157,10 +156,10 @@
 
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
-		finalStepAdded = "ID du GPS transmise aux secours." ;
+		finalStepAdded = "Vous avez trouvé la position de <b>Vulcain</b> ! Appelez l'agent pour l'en informer." ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "agent_avatar.png"} ;
+var missingContact = { "vid": "missing", "vod_folder": "", "username": "Agent", "canal": "video", "avatar": "agent_avatar.png"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
@@ -170,7 +169,7 @@ var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie
 		tips['Boss'][2] = "Cette fois ci, nous recherchons la position de <b>Myrtil</b>. Au travail !" ;
 		tips['Boss'][3] = "De manière logique, le cocon semble être égal à 21..." ;
 		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Macaon</b>." ;
-		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet." ;
+		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet. Combien y en a-t-il" ;
 		tips['Boss'][6] = "Cette résistante est notre dernier espoir. Vous devez trouver <b>Vulcain</b> !" ;
 		tips['Boss'][7] = "Notre espion a dû disséminer le MDP sur les différents journaux sans toucher directement aux articles... Il faut chercher hors du cadre." ;
 
