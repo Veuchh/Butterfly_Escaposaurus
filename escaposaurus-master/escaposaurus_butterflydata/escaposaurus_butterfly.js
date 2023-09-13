@@ -50,7 +50,7 @@
 									"password": "baudelaire",
 									"sequence": 1
 								}],
-							"files": ["citations.png", "diplome_litterature.png"], "password": "monarque", "sequence": 0
+							"files": ["liste_livres.png", "diplome_litterature.png"], "password": "monarque", "sequence": 0
 						},
 							
 						{
@@ -62,7 +62,7 @@
 									"password": "47",
 									"sequence": 3
 								}],
-							"files": ["probleme.png", "diplome_mathematiques.png"], "password": "myrtil", "sequence": 2
+							"files": ["probleme.jpg", "diplome_mathematiques.png"], "password": "myrtil", "sequence": 2
 						},
 
 						{
@@ -91,21 +91,21 @@
 				}],
 				"files":
 				[
-					"Noms_Code.png"
+					"Memo.png"
 				]}
 		} ;
 
-		var gameTitle = "Escaposaurus Scenario Exemple" ;
-		var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>" ;
-		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données" ;
-		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
+		var gameTitle = "Opération Butterfly" ;
+		var gameDescriptionHome = "Le pays dans lequel le personnage que vous jouez est sous le joug d'un dicatateur. Quatre des membres les plus importantes de la résistance, les sœurs papillons, sont en danger. Votre personnage est chargé de les retrouver. Vous disposez pour cela de données laissées par les papillons. Bonne chance !" ;
+		var gameMissionCall = "" ;
+		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et rechercher la position des membres de la resistance (JOUER) &laquo;&laquo;" ;
 
-		var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
-		var gameThanks = "Remerciements : <br/> ;)" ;
+		var gameCredit = "Un jeu conçu et réalisé par : <br/>Antonin Lombard<br/>Théodore Laborde<br/>Gabriel Purnelle<br/>Tom Dexport<br/>Matthéo Blivet<br/>Louis Vogel" ;
+		var gameThanks = "" ;
 
-		var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
-		var explorerName = "USB DISK EXPLORER" ;
-		var callerAppName = "CALL CONTACT" ;
+		var OSName = "ArchLinux 6.4.12 - diskloaded: ResistanceData" ;
+		var explorerName = "FILE EXPLORER" ;
+		var callerAppName = "INITIATE COMMUNICATION" ;
 
 		/*titles of video windows*/
 		var titleData = {} ;
@@ -114,13 +114,18 @@
 		titleData.callTitle = "COMMUNICATION EN COURS..." ;
 
 		/*change of caller app prompt for each sequence*/
-		var promptDefault = "Rien à demander, ne pas les déranger." ;
+		var promptDefault = "Pas de signal." ;
 		var prompt = [] ;
-		prompt[0] = "Prendre contact" ;
-		prompt[1] = "" ;
-		prompt[2] = "" ;
-		prompt[3] = "Envoyer la carte" ;
-		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
+		prompt[0] = "Pas de signal.";
+		prompt[1] = "Pas de signal.";
+		prompt[2] = "Contacter l'agent / Regarder la presse";
+		prompt[3] = "Pas de signal.";
+		prompt[4] = "Contacter l'agent / Regarder la presse";
+		prompt[5] = "Pas de signal.";
+		prompt[6] = "Contacter l'agent / Regarder la presse";
+		prompt[7] = "Pas de signal.";
+		prompt[8] = "Pas de signal.";
+		prompt[9] = "Pas de signal.";
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 8 ;
@@ -129,22 +134,25 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "Noms_Code.png" ;
-		seqMainHint[1] = "" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[0] = "Memo.png" ;
+		seqMainHint[1] = "liste_livres.png" ;
 		seqMainHint[2] = "Monarque_positionGPS.png" ;
-		seqMainHint[3] = "" ;
-		seqMainHint[4] = "Myrtil_positionGPS" ;
+		seqMainHint[3] = "probleme.jpg" ;
+		seqMainHint[4] = "Myrtil_positionGPS.png" ;
+		seqMainHint[5] = "painting.jpg" ;
+		seqMainHint[6] = "Macaon_positionGPS.png" ;
+		seqMainHint[7] = "Correspondance_agent.png" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name
 		*/
 		var normalContacts = [] ;
-		normalContacts[0] = {"vid" : "Agent", "vod_folder" : "", "username" : "Agent", "canal" : "video", "avatar" : "agent_avatar.jpg"} ;
-		normalContacts[1] = {"vid" : "Presse", "vod_folder" : "", "username" : "Presse", "canal" : "video", "avatar" : "presse_avatar.jpg"} ;
+		normalContacts[0] = {"vid" : "Agent", "vod_folder" : "", "username" : "Agent", "canal" : "video", "avatar" : "agent_avatar.png"} ;
+		normalContacts[1] = {"vid" : "Presse", "vod_folder" : "", "username" : "Presse", "canal" : "video", "avatar" : "presse_avatar.png"} ;
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
-helperContacts[0] = { "vid": "Boss", "vod_folder": "", "username": "Boss (pour avoir un indice)", "canal": "txt", "avatar": "bossoriginal.png", "bigAvatar": "bossoriginal.png"} ;
+		helperContacts[0] = { "vid": "Boss", "vod_folder": "", "username": "Boss (pour avoir un indice)", "canal": "txt", "avatar": "bossoriginal.png", "bigAvatar": "bossoriginal.png"} ;
 		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 
@@ -152,25 +160,29 @@ helperContacts[0] = { "vid": "Boss", "vod_folder": "", "username": "Boss (pour a
 		finalStepAdded = "ID du GPS transmise aux secours." ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "agent_avatar.png"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
 		tips['Boss'] = [] ;
-tips['Boss'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler." ;
-tips['Boss'][1] = "" ;
-tips['Boss'][2] = "" ;
-tips['Boss'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
+		tips['Boss'][0] = "Le nom de code de la personne que l'on recherche est <b>Monarque</b>." ;
+		tips['Boss'][1] = " Le MDP concerne l'auteur de sa thèse. Il me semble que son œuvre phare est partiellement lisible sur son diplôme." ;
+		tips['Boss'][2] = "Cette fois ci, nous recherchons la position de <b>Myrtil</b>. Au travail !" ;
+		tips['Boss'][3] = "De manière logique, le cocon semble être égal à 21..." ;
+		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Macaon</b>." ;
+		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet." ;
+		tips['Boss'][6] = "Cette résistante est notre dernier espoir. Vous devez trouver <b>Vulcain</b> !" ;
+		tips['Boss'][7] = "Notre espion a dû disséminer le MDP sur les différents journaux sans toucher directement aux articles... Il faut chercher hors du cadre." ;
 
 
 		/*text for the instruction / solution windows*/
 		var instructionText = {} ;
-		instructionText.winState = "Vous avez retrouvé l'id GPS et vous pouvez appeler les secours du secteur." ;
+		instructionText.winState = "Vous avez retrouvé l'id GPS et vous pouvez envoyer l'agent." ;
 		instructionText.lackMainHint = "" ;
 		instructionText.password = "Vous devez trouver et entrer le mot de passe d'un des dossiers de la boite de droite. Vous pouvez trouver le mot de passe en appelant les contacts de la boite de gauche.<br/>Pour entrer un mot de passe, cliquez sur le nom d'un dossier et une fenêtre s'affichera pour que vous puissiez donner le mot de passe." ;
 
 		/*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 		var solutionText = {} ;
-		solutionText.winState = "Si Sabine a été secourue, le jeu est fini bravo." ;
+		solutionText.winState = "Vous avez secouru Vulcain. Bien joué !" ;
 		solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>" ;
 		solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>" ;
