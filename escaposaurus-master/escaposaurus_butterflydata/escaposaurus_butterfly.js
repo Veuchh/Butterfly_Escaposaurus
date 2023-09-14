@@ -69,12 +69,12 @@
 							"foldername": "Butterfly3",
 							"folders":
 								[{
-									"foldername": "Macaon_Position",
-									"files": ["Macaon_positionGPS.png"],
+									"foldername": "Machaon_Position",
+									"files": ["Machaon_positionGPS.png"],
 									"password": "3",
 									"sequence": 5
 								}],
-							"files": ["Article_expo.png", "painting.jpg"], "password": "macaon", "sequence": 4
+							"files": ["Article_expo.png", "painting.jpg"], "password": "Machaon", "sequence": 4
 						},
 
 						{
@@ -91,7 +91,7 @@
 				}],
 				"files":
 				[
-					"Memo.png"
+					"Fiche_Especes.png", "Memo.png"
 				]}
 		} ;
 
@@ -139,7 +139,7 @@ var gameThanks = "Crédits images :<br/> Planes from the AMC by <i>Kristin ROYAL
 		seqMainHint[3] = "probleme.png" ;
 		seqMainHint[4] = "Myrtil_positionGPS.png" ;
 		seqMainHint[5] = "painting.jpg" ;
-		seqMainHint[6] = "Macaon_positionGPS.png" ;
+		seqMainHint[6] = "Machaon_positionGPS.png" ;
 		seqMainHint[7] = "Correspondance_agent.png" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
@@ -168,7 +168,7 @@ var missingContact = { "vid": "missing", "vod_folder": "", "username": "Agent", 
 		tips['Boss'][1] = "Le MDP concerne l'auteur de sa thèse. Il me semble que son œuvre phare est partiellement lisible sur son diplôme." ;
 		tips['Boss'][2] = "Cette fois ci, nous recherchons la position de <b>Myrtil</b>. Au travail !" ;
 		tips['Boss'][3] = "De manière logique, le cocon semble être égal à 21..." ;
-		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Macaon</b>." ;
+		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Machaon</b>." ;
 		tips['Boss'][5] = "Les papillons sont tous situés aux abords du bouquet. Combien y en a-t-il ?" ;
 		tips['Boss'][6] = "Cette résistante est notre dernier espoir. Vous devez trouver <b>Vulcain</b> !" ;
 		tips['Boss'][7] = "Notre espion a dû disséminer le MDP sur les différents journaux sans toucher directement aux articles... Il faut chercher hors du cadre." ;
