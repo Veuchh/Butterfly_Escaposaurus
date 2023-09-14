@@ -101,7 +101,7 @@
 		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et rechercher la position des membres de la resistance (JOUER) &laquo;&laquo;" ;
 
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Antonin Lombard<br/>Théodore Laborde<br/>Gabriel Purnelle<br/>Tom Dexport<br/>Matthéo Blivet<br/>Louis Vogel" ;
-		var gameThanks = "" ;
+var gameThanks = "Crédits images :<br/> Planes from the AMC by <i>Kristin ROYALTY</i> under CC-by license<br/>Burning Car, Crowd & House from <i>Free Pictures Library (pxhere)</i> under the CC-0 license</br>Vase de fleurs by <i>Jan Davidsz de Heem</i> in 1645</br>Les soeurs Mariposas <i>unknown artist</i></br>LOndon Central Bank by <i>Diego Delso</i> under the CC-by license" ;
 
 		var OSName = "ArchLinux 6.4.12 - diskloaded: ResistanceData" ;
 		var explorerName = "FILE EXPLORER" ;
