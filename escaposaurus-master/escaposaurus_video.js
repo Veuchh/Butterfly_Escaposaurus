@@ -133,7 +133,8 @@ function addListenerToLink(){
 	}
 }
 
-var callbackClicHint = function(evt){
+var callbackClicHint = function (evt) {
+	//insert sfx open file here
 	var fn = evt.target.href.substring(evt.target.href.lastIndexOf('/')+1);
 	if(fn == seqMainHint[sequenceNumber]){
 		mainHintFound = true ;
