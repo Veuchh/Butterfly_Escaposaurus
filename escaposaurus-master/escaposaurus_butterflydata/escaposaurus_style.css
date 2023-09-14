@@ -184,10 +184,11 @@ video{max-width: 960px;}
 #folderApp{
 	color: var(--main-color);
 	width:450px;
-	height:650px;
+	max-height: 85%;
+	min-height: fit-content;
 	overflow: auto;
 	padding:0 0 0 0;
-	margin:50 0 0 150;
+	margin:50 0 50 150;
 	background-color:var(--back-color);
 	border:2px solid var(--main-color);
 	box-shadow: 10px 10px 0px var(--shadow-color);
