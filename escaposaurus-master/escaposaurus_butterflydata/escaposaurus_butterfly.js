@@ -45,7 +45,7 @@
 							"foldername": "Butterfly1",
 							"folders":
 								[{
-									"foldername": "Butterfly1_Position",
+									"foldername": "Monarque_Position",
 									"files": ["Monarque_positionGPS.png"],
 									"password": "baudelaire",
 									"sequence": 1
@@ -62,7 +62,7 @@
 									"password": "47",
 									"sequence": 3
 								}],
-							"files": ["probleme.jpg", "diplome_mathematiques.png"], "password": "myrtil", "sequence": 2
+							"files": ["probleme.png", "diplome_mathematiques.png"], "password": "myrtil", "sequence": 2
 						},
 
 						{
@@ -136,7 +136,7 @@
 		seqMainHint[0] = "Memo.png" ;
 		seqMainHint[1] = "liste_livres.png" ;
 		seqMainHint[2] = "Monarque_positionGPS.png" ;
-		seqMainHint[3] = "probleme.jpg" ;
+		seqMainHint[3] = "probleme.png" ;
 		seqMainHint[4] = "Myrtil_positionGPS.png" ;
 		seqMainHint[5] = "painting.jpg" ;
 		seqMainHint[6] = "Macaon_positionGPS.png" ;
