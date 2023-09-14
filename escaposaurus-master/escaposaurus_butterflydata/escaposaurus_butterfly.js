@@ -96,8 +96,8 @@
 		} ;
 
 		var gameTitle = "Opération Butterfly" ;
-		var gameDescriptionHome = "Le pays dans lequel le personnage que vous jouez est sous le joug d'un dicatateur. Quatre des membres les plus importantes de la résistance, les sœurs papillons, sont en danger. Votre personnage est chargé de les retrouver. Vous disposez pour cela de données laissées par les papillons. Bonne chance !" ;
-		var gameMissionCall = "" ;
+		var gameDescriptionHome = "Le pays dans lequel le personnage que vous jouez est sous le joug d'un dictateur. Quatre des membres les plus importantes de la résistance, les sœurs papillons, sont en danger. Votre personnage est chargé de les retrouver. Vous disposez pour cela de données laissées par les papillons. Bonne chance !" ;
+		var gameMissionCall = "Vidéo envoyée par un civil d'un récent passage à la télévision nationale." ;
 		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et rechercher la position des membres de la resistance (JOUER) &laquo;&laquo;" ;
 
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Antonin Lombard<br/>Théodore Laborde<br/>Gabriel Purnelle<br/>Tom Dexport<br/>Matthéo Blivet<br/>Louis Vogel" ;
@@ -165,7 +165,7 @@ var missingContact = { "vid": "missing", "vod_folder": "", "username": "Agent", 
 		var tips = {} ;
 		tips['Boss'] = [] ;
 		tips['Boss'][0] = "Le nom de code de la personne que l'on recherche est <b>Monarque</b>." ;
-		tips['Boss'][1] = "Le MDP concerne l'auteur de sa thèse. Il me semble que son œuvre phare est partiellement lisible sur son diplôme." ;
+		tips['Boss'][1] = "Le MDP concerne l'auteur au centre de sa thèse. Il me semble que son œuvre phare est partiellement lisible sur son diplôme." ;
 		tips['Boss'][2] = "Cette fois ci, nous recherchons la position de <b>Myrtil</b>. Au travail !" ;
 		tips['Boss'][3] = "De manière logique, le cocon semble être égal à 21..." ;
 		tips['Boss'][4] = "Je sais que nous n'avons pas eu de chance jusque là, mais faites de votre mieux pour retrouver <b>Machaon</b>." ;
