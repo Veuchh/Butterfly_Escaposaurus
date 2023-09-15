@@ -96,12 +96,12 @@
 		} ;
 
 		var gameTitle = "Opération Butterfly" ;
-		var gameDescriptionHome = "Le pays dans lequel le personnage que vous jouez est sous le joug d'un dictateur. Quatre des membres les plus importantes de la résistance, les sœurs papillons, sont en danger. Votre personnage est chargé de les retrouver. Vous disposez pour cela de données laissées par les papillons. Bonne chance !" ;
+		var gameDescriptionHome = "Vous incarnez un personnage dans un pays sous le joug d'un dictateur. Quatre des membres les plus importantes de la résistance, les sœurs papillons, sont en danger. Votre personnage est chargé de les retrouver. Vous disposez pour cela de données laissées par les papillons. Bonne chance !" ;
 		var gameMissionCall = "Vidéo envoyée par un civil d'un récent passage à la télévision nationale." ;
 		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et rechercher la position des membres de la resistance (JOUER) &laquo;&laquo;" ;
 
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Antonin Lombard<br/>Théodore Laborde<br/>Gabriel Purnelle<br/>Tom Dexport<br/>Matthéo Blivet<br/>Louis Vogel" ;
-var gameThanks = "Crédits images :<br/> Planes from the AMC by <i>Kristin ROYALTY</i> under CC-by license<br/>Burning Car, Crowd & House from <i>Free Pictures Library (pxhere)</i> under the CC-0 license</br>Vase de fleurs by <i>Jan Davidsz de Heem</i> in 1645</br>Les soeurs Mariposas <i>unknown artist</i></br>LOndon Central Bank by <i>Diego Delso</i> under the CC-by license" ;
+		var gameThanks = "Crédits images :<br/> Planes from the AMC by <i>Kristin ROYALTY</i> under CC-by license<br/>Burning Car, Crowd & House from <i>Free Pictures Library (pxhere)</i> under the CC-0 license</br>Vase de fleurs by <i>Jan Davidsz de Heem</i> in 1645</br>Les soeurs Mariposas <i>unknown artist</i></br>LOndon Central Bank by <i>Diego Delso</i> under the CC-by license" ;
 
 		var OSName = "ArchLinux 6.4.12 - diskloaded: ResistanceData" ;
 		var explorerName = "FILE EXPLORER" ;
