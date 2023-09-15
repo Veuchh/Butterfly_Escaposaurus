@@ -50,7 +50,7 @@
 									"password": "baudelaire",
 									"sequence": 1
 								}],
-							"files": ["liste_livres.png", "diplome_litterature.png"], "password": "monarque", "sequence": 0
+							"files": ["liste_livres.png", "diplome_litterature.png", "correspondance_privee.png"], "password": "monarque", "sequence": 0
 						},
 							
 						{
